@@ -45,11 +45,6 @@ public class CustomNetworkHUD : MonoBehaviour
                 manager.StartHost();
             }
 
-            if (GUILayout.Button("Start Client"))
-            {
-                manager.StartClient();
-            }
-
             GUILayout.Label("Enter IP to Connect:");
             manager.networkAddress = GUILayout.TextField(manager.networkAddress);
 
